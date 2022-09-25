@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        color: #00d5ff;
+        background-color: black;
+    }
+
+    #country {
+        width: 30%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: #00d5ff 3px solid;
+        background: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        ;
+        font-weight: bold;
+        color: #00d5ff;
+
+    }
+
+    #fragnance {
+        width: 30%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: #00d5ff 2px solid;
+        background-color: black;
+        color: #00d5ff;
+        font-family: Arial, Helvetica, sans-serif;
+        ;
+        font-weight: bold;
+
+
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #00d5ff;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #00d5ff;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #00d5ff;}
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+
+
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: #00d5ff 2px solid;
+        background-color: black;
+        color: #00d5ff;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+        border: #00d5ff 2px solid;
+        background-color: black;
+        color: #00d5ff;
+        outline: none;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+
+
+    button {
+        border: #00d5ff 2px solid;
+        background-color: black;
+        color: #00d5ff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+
+
+    .signupbtn {
+        float: left;
+        width: 100%;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    textarea {
+        background-color: #000000;
+        border: #00d5ff 2px solid;
+        background-color: black;
+        color: #00d5ff;
+
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #00d5ff;
+        border-radius: 45px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #ffffff;
+    }
+
+    ::-webkit-scrollbar {
+        width: 20px;
+        height: 10px;
+        border-radius: 45px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgba(255, 228, 196, 0);
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <form action="feels.html">
+        <div class="container">
+            <h1>Customization</h1>
+            <p>Please fill in this form to customize your soap.</p>
+
+            <label for="email"><b>Email : </b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b> Name : </b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+
+            <B>Fragnance :</B> <br>
+            <select id="fragnance" name="fragnance" required>
+                <option>-select-</option>
+                <option value="AF">Rose</option>
+                <option value="AL">Sandalwood</option>
+                <option value="DZ">Jasmine</option>
+                <option value="AR">Lavendar</option>
+                <option value="AM">Mint</option>
+                <option value="AU">Coffee</option>
+                <option value="BS">Citrus</option>
+            </select>
+            <br> <br>
+            <label for="colorpicker"><b> Colour : </b></label>
+            <input type="color" id="colorpicker" value="#00d5ff"> <br> <br> <br>
+
+            <B>Emirates :</B> <br>
+            <select id="country" name="country" required>
+                <option>-select-</option>
+                <option value="AF">Abu Dhabi</option>
+                <option value="AL">Umm Al Quwain</option>
+                <option value="DZ">Ajman</option>
+                <option value="AR">Dubai</option>
+                <option value="AM">Fujairah</option>
+                <option value="AU">Ras Al Khaimah</option>
+                <option value="BS">Sharjah</option>
+            </select> <br>
+            <br> <br>
+            <label for="add"><b> Address : </b></label> <br>
+            <textarea name="add" id="add" cols="30" rows="10" placeholder="Enter Here"></textarea> <br>
+            <div> <br>
+                <button type="submit" class="signupbtn" style="background-color:#00d5ff ; color:black;">Order</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
